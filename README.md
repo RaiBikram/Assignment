@@ -18,7 +18,6 @@
 ### Code Quality
 - Used TypeScript for type safety
 - Implemented component-based architecture
-- Followed best practices for accessibility (WCAG)
 
 ## Setup Guide
 ```bash
