@@ -1,0 +1,117 @@
+import React from 'react';
+import Image from 'next/image';
+
+const GlobalMovementPage = () => {
+  return (
+    <main>
+      {/* Hero Section */}
+      <section className="bg-white py-12 md:py-16">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="space-y-6">
+              <h1 className="text-5xl md:text-7xl font-bold leading-tight text-[#000000]">
+                Empowering <span className="text-[#00AEEF]">Change</span>,
+                <br />
+                Globally and Locally
+              </h1>
+              <p className="text-gray-600">
+                Join the Global Movement to Address Today's Challenges
+                <br />
+                and Build a Sustainable Future.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <button className="bg-[#00AEEF] hover:bg-blue-600 text-white px-6 py-3 rounded">
+                  Join the Movement
+                </button>
+                <button className="text-black border border-gray-300 px-6 py-3 rounded hover:bg-gray-100">
+                  Support Us
+                </button>
+              </div>
+            </div>
+            <div className="relative h-[400px] w-full">
+              {/* Image Container */}
+              <div className="absolute top-0 right-0 w-full h-full">
+                <div className="relative w-full h-full">
+                  <div className="absolute right-0 top-0 w-full h-full bg-[#00AEEF]"></div>
+                  <div className="absolute right-0 top-0 w-full h-full flex items-center justify-center">
+                    <Image
+                      src="/globe.webp"
+                      alt="Globe Illustration"
+                      width={500}
+                      height={500}
+                      className="object-contain z-10"
+                    />
+                  </div>
+                  <div className="absolute bottom-0 w-full flex justify-between px-8">
+                    <div className="text-center">
+                      <p className="text-[#00AEEF] font-bold text-2xl">180K+</p>
+                      <p className="text-white">Member</p>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-[#00AEEF] font-bold text-2xl">2000+</p>
+                      <p className="text-white">Collaborations</p>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-[#00AEEF] font-bold text-2xl">180K+</p>
+                      <p className="text-white">Member</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Map and Council Section */}
+      <section className="py-8">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="relative h-[250px] w-full">
+              <Image
+                src="/international.webp"
+                alt="World Map"
+                fill
+                className="object-contain rounded-lg"
+              />
+            </div>
+            <div className="relative h-[250px] w-full">
+              <Image
+                src="/meeting.webp"
+                alt="People in Meeting"
+                fill
+                className="object-contain rounded-lg"
+              />
+            </div>
+          </div>
+          
+          {/* Council Box */}
+          <div className="mt-6">
+            <div className="bg-[#00AEEF] text-white p-6 rounded-md">
+              <h3 className="text-xl text-center font-semibold mb-3">International Affairs & Diplomacy Council</h3>
+              <p className="text-sm">
+                Promoting international cooperation and understanding, this council facilitates dialogue between young leaders worldwide, advocates for peaceful conflict resolution, and proposes diplomatic solutions to global challenges.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* People Illustration Section */}
+      <section className="py-8 md:py-12">
+        <div className="container mx-auto px-4">
+          <div className="relative h-[250px] w-full">
+            <Image
+              src="/people.webp"
+              alt="Diverse People Illustration"
+              fill
+              className="object-contain"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+};
+
+export default GlobalMovementPage;
