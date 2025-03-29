@@ -5,7 +5,6 @@
 - **Styling:** Tailwind CSS
 - **Smooth Scrolling:** Lenis
 - **Icons:** React Icons
-- **Animation:** Framer Motion
 
 ## Implementation Approach
 
